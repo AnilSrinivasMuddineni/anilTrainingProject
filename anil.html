@@ -49,192 +49,208 @@
   				
   				centerDiv.style.left = (myWidth/2) - (mainDivW/2) + 'px';
   				centerDiv.style.top = (myHeight/2) - (mainDivH/2) + 'px';
-          document.getElementById('searchBar').style.width = "300px";
-
-         	document.getElementById('searchBar').style.height = "3em";
-          document.getElementById('searchBar').style.borderRadius = "5px";
+          var searchBar = document.getElementById('searchBar');
+          searchBar.style.width = "300px";
+        	searchBar.style.height = "3em";
+          searchBar.style.borderRadius = "5px";
           document.getElementById('child12').style.padding = "5px";
-          document.getElementById('searchButton').style.width = "120px";
-          document.getElementById('searchButton').style.height = "36px";
-          document.getElementById('searchButton').style.fontSize = "15px"; 
-          document.getElementById('searchButton').style.fontFamily = "arial,sans-serif";
-          document.getElementById('searchButton').style.color = "#757575";
-          document.getElementById('searchButton').style.margin = "11px 10px"; 
-          document.getElementById('searchButton').style.border="1px solid #f2f2f2";
-          document.getElementById('searchButton').style.backgroundColor="#f2f2f2";
-          document.getElementById('searchImage').style.width = "120px";
-          document.getElementById('searchImage').style.height = "36px";
-          document.getElementById('searchImage').style.fontSize = "15px"; 
-          document.getElementById('searchImage').style.fontFamily = "arial,sans-serif";
-          document.getElementById('searchImage').style.color = "#757575";
-          document.getElementById('searchImage').style.margin = "11px 15px"; 
-          document.getElementById('searchImage').style.border="1px solid #f2f2f2";
-          document.getElementById('searchImage').style.backgroundColor="#f2f2f2";
-          document.getElementById('head').style.textAlign="right";
-          document.getElementById('head').style.fontSize="15px";
-          document.getElementById('head').style.fontFamily = "arial,sans-serif";
-          document.getElementById('head1').style.textDecoration = "none";
-          document.getElementById('head2').style.textDecoration = "none";
-          document.getElementById('head3').style.textDecoration = "none";
-          document.getElementById('head').style.margin="20px";
-          document.getElementById('head1').style.margin="10px";
-          document.getElementById('head2').style.margin="10px";
-          document.getElementById('head3').style.margin="10px";
-          document.getElementById('head1').style.color="#777";
-          document.getElementById('head2').style.color="#777";
-          document.getElementById('head3').style.color="#777";
-          document.getElementById('foot').style.bottom="0px";
-          document.getElementById('foot1').style.textDecoration = "none";
-          document.getElementById('foot2').style.textDecoration = "none";
-          document.getElementById('foot3').style.textDecoration = "none";
-           document.getElementById('foot4').style.textDecoration = "none";
+          var searchButton= document.getElementById('searchButton');
+          searchButton.style.width = "120px";
+          searchButton.style.height = "36px";
+          searchButton.style.fontSize = "15px"; 
+          searchButton.style.fontFamily = "arial,sans-serif";
+          searchButton.style.color = "#757575";
+          searchButton.style.margin = "11px 10px"; 
+          searchButton.style.border="1px solid #f2f2f2";
+          searchButton.style.backgroundColor="#f2f2f2";
+          var searchImage=document.getElementById('searchImage');
+          searchImage.style.width = "120px";
+          searchImage.style.height = "36px";
+          searchImage.style.fontSize = "15px"; 
+          searchImage.style.fontFamily = "arial,sans-serif";
+          searchImage.style.color = "#757575";
+          searchImage.style.margin = "11px 15px"; 
+          searchImage.style.border="1px solid #f2f2f2";
+          searchImage.style.backgroundColor="#f2f2f2";
+          var head=document.getElementById('head');
+          head.style.textAlign="right";
+          head.style.fontSize="15px";
+          head.style.fontFamily = "arial,sans-serif";
+          var head1=document.getElementById('head1');
+          head1.style.textDecoration = "none";
+          var head2=document.getElementById('head2');
+          head2.style.textDecoration = "none";
+          var head3=document.getElementById('head3');
+          head3.style.textDecoration = "none";
+          head.style.margin="20px";
+          head1.style.margin="10px";
+          head2.style.margin="10px";
+          head3.style.margin="10px";
+          head1.style.color="#777";
+          head2.style.color="#777";
+          head3.style.color="#777";
+          var foot=document.getElementById('foot');
+          foot.style.bottom="0px";
+          var foot1=document.getElementById('foot1');
+          foot1.style.textDecoration = "none";
+          var foot2=document.getElementById('foot2');
+          foot2.style.textDecoration = "none";
+          var foot3=document.getElementById('foot3');
+          foot3.style.textDecoration = "none";
+           var foot4=document.getElementById('foot4');
+           foot4.style.textDecoration = "none";
          
-          document.getElementById('footnav').style.margin="0px";
-          document.getElementById('foot1').style.margin="20px";
-           document.getElementById('foot1').style.paddingLeft="20px";
+          var footnav=document.getElementById('footnav');
+          footnav.style.margin="0px";
+          foot1.style.margin="20px";
+           foot1.style.paddingLeft="20px";
           
-          document.getElementById('foot2').style.margin="20px";
-          document.getElementById('foot3').style.margin="20px";
-          document.getElementById('foot1').style.color="#777";
-          document.getElementById('foot2').style.color="#777";
-          document.getElementById('foot3').style.color="#777";
-          document.getElementById('foot4').style.color="#777";
+          foot2.style.margin="20px";
+          foot3.style.margin="20px";
+          foot1.style.color="#777";
+          foot2.style.color="#777";
+          foot3.style.color="#777";
+          foot4.style.color="#777";
            
-          document.getElementById('footnav').style.textAlign="left";
-          document.getElementById('footnav').style.fontSize="15px";
-          document.getElementById('footnav').style.fontFamily = "arial,sans-serif";
-          document.getElementById('footnav').style.bottom="0px";
-          document.getElementById('footnav').style.right="0px";
-          document.getElementById('footnav').style.position="absolute";
-          document.getElementById('footnav').style.border="2px solid #e4e4e4";
-           document.getElementById('footnav').style.padding="10px";
+          footnav.style.textAlign="left";
+          footnav.style.fontSize="15px";
+          footnav.style.fontFamily = "arial,sans-serif";
+          footnav.style.bottom="0px";
+          footnav.style.right="0px";
+          footnav.style.position="absolute";
+          footnav.style.border="2px solid #e4e4e4";
+           footnav.style.padding="10px";
          
-          document.getElementById('footnav').style.width="100%";
-          document.getElementById('footnav1').style.textAlign="left";
-          document.getElementById('footnav1').style.fontSize="15px";
-          document.getElementById('footnav1').style.fontFamily = "arial,sans-serif";
-          document.getElementById('footnav1').style.bottom="0px";
-          document.getElementById('footnav1').style.right="0px";
-          document.getElementById('footnav1').style.position="absolute";
-          document.getElementById('footnav1').style.margin="0px";
-           document.getElementById('footnav1').style.padding="10px";
-          document.getElementById('footnav').style.background="#f2f2f2";
+          footnav.style.width="100%";
+          var footnav1=document.getElementById('footnav1');
+          footnav1.style.textAlign="left";
+          footnav1.style.fontSize="15px";
+          footnav1.style.fontFamily = "arial,sans-serif";
+          footnav1.style.bottom="0px";
+          footnav1.style.right="0px";
+          footnav1.style.position="absolute";
+          footnav1.style.margin="0px";
+           footnav1.style.padding="10px";
+          footnav.style.background="#f2f2f2";
        
-          document.getElementById('foot5').style.textDecoration = "none";
-          document.getElementById('foot6').style.textDecoration = "none";
-          document.getElementById('foot7').style.textDecoration = "none";
-          document.getElementById('foot5').style.margin="20px";
-          document.getElementById('foot6').style.margin="20px";
-          document.getElementById('foot7').style.margin="20px";
-          document.getElementById('foot5').style.color="#777";
-          document.getElementById('foot6').style.color="#777";
-          document.getElementById('foot7').style.color="#777";  
+          var foot5=document.getElementById('foot5');
+          foot5.style.textDecoration = "none";
+          var foot6=document.getElementById('foot6');
+          foot6.style.textDecoration = "none";
+          var foot7=document.getElementById('foot7');
+          foot7.style.textDecoration = "none";
+          foot5.style.margin="20px";
+          foot6.style.margin="20px";
+          foot7.style.margin="20px";
+          foot5.style.color="#777";
+          foot6.style.color="#777";
+          foot7.style.color="#777";  
            
           
-         document.getElementById("foot1").addEventListener("mouseover", mouseOver1);
-        document.getElementById("foot1").addEventListener("mouseout", mouseOut1);
-        document.getElementById("foot2").addEventListener("mouseover", mouseOver2);
-  document.getElementById("foot3").addEventListener("mouseover", mouseOver3);
-  document.getElementById("foot4").addEventListener("mouseover", mouseOver4);
-  document.getElementById("foot5").addEventListener("mouseover", mouseOver5);
-  document.getElementById("foot6").addEventListener("mouseover", mouseOver6);
-  document.getElementById("foot7").addEventListener("mouseover", mouseOver7);
-  document.getElementById("head1").addEventListener("mouseover", mouseOver11);
-  document.getElementById("head2").addEventListener("mouseover", mouseOver12);
-  document.getElementById("head3").addEventListener("mouseover", mouseOver13);
-  document.getElementById("foot2").addEventListener("mouseout", mouseOut2);
-  document.getElementById("foot3").addEventListener("mouseout", mouseOut3);
-  document.getElementById("foot4").addEventListener("mouseout", mouseOut4);
-  document.getElementById("foot5").addEventListener("mouseout", mouseOut5);
-  document.getElementById("foot6").addEventListener("mouseout", mouseOut6);
-  document.getElementById("foot7").addEventListener("mouseout", mouseOut7);
- document.getElementById("head1").addEventListener("mouseout", mouseOut11);
-  document.getElementById("head2").addEventListener("mouseout", mouseOut12);
-  document.getElementById("head3").addEventListener("mouseout", mouseOut13);
-document.getElementById("searchBar").addEventListener("mouseover", mouseOver21);
-  document.getElementById("searchButton").addEventListener("mouseover", mouseOver22);
-  document.getElementById("searchImage").addEventListener("mouseover", mouseOver23);
-document.getElementById("searchBar").addEventListener("mouseout", mouseOut21);
-  document.getElementById("searchButton").addEventListener("mouseout", mouseOut22);
-  document.getElementById("searchImage").addEventListener("mouseout", mouseOut23);
+         foot1.addEventListener("mouseover", mouseOver1);
+        foot1.addEventListener("mouseout", mouseOut1);
+        foot2.addEventListener("mouseover", mouseOver2);
+  foot3.addEventListener("mouseover", mouseOver3);
+  foot4.addEventListener("mouseover", mouseOver4);
+  foot5.addEventListener("mouseover", mouseOver5);
+  foot6.addEventListener("mouseover", mouseOver6);
+  foot7.addEventListener("mouseover", mouseOver7);
+  head1.addEventListener("mouseover", mouseOver11);
+  head2.addEventListener("mouseover", mouseOver12);
+  head3.addEventListener("mouseover", mouseOver13);
+  foot2.addEventListener("mouseout", mouseOut2);
+  foot3.addEventListener("mouseout", mouseOut3);
+  foot4.addEventListener("mouseout", mouseOut4);
+  foot5.addEventListener("mouseout", mouseOut5);
+  foot6.addEventListener("mouseout", mouseOut6);
+  foot7.addEventListener("mouseout", mouseOut7);
+ head1.addEventListener("mouseout", mouseOut11);
+  head2.addEventListener("mouseout", mouseOut12);
+  head3.addEventListener("mouseout", mouseOut13);
+searchBar.addEventListener("mouseover", mouseOver21);
+  searchButton.addEventListener("mouseover", mouseOver22);
+  searchImage.addEventListener("mouseover", mouseOver23);
+searchBar.addEventListener("mouseout", mouseOut21);
+  searchButton.addEventListener("mouseout", mouseOut22);
+  searchImage.addEventListener("mouseout", mouseOut23);
 
  function mouseOver21() {
-                 document.getElementById("searchBar").style.border=" 1px solid #000000";
+                 searchBar.style.border=" 1px solid #000000";
                   } 
                    function mouseOver22() {
-                 document.getElementById("searchButton").style.border=" 1px solid #000000";
+                 searchButton.style.border=" 1px solid #000000";
                   } 
                    function mouseOver23() {
-                 document.getElementById("searchImage").style.border=" 1px solid #000000";
+                 searchImage.style.border=" 1px solid #000000";
                   } 
             function mouseOver1() {
-                 document.getElementById("foot1").style.textDecoration = "underline";
+                 foot1.style.textDecoration = "underline";
                   } 
                   function mouseOver2() {
-                   document.getElementById("foot2").style.textDecoration = "underline"; }
+                   foot2.style.textDecoration = "underline"; }
                    function mouseOver3() {
-                 document.getElementById("foot3").style.textDecoration = "underline"; }
+                 foot3.style.textDecoration = "underline"; }
                    function mouseOver4() {
                 
-                 document.getElementById("foot4").style.textDecoration = "underline"; }
+                 foot4.style.textDecoration = "underline"; }
                   function mouseOver5() {
                 
-                 document.getElementById("foot5").style.textDecoration = "underline"; }
+                 foot5.style.textDecoration = "underline"; }
                   function mouseOver6() {
                 
-                 document.getElementById("foot6").style.textDecoration = "underline"; }
+                 foot6.style.textDecoration = "underline"; }
                   function mouseOver7() {
                 
-                 document.getElementById("foot7").style.textDecoration = "underline"; }
+                 foot7.style.textDecoration = "underline"; }
                   function mouseOver11() {
                 
-                 document.getElementById("head1").style.textDecoration = "underline"; }
+                 head1.style.textDecoration = "underline"; }
                   function mouseOver12() {
                 
-                 document.getElementById("head2").style.textDecoration = "underline"; }
+                 head2.style.textDecoration = "underline"; }
                   function mouseOver13() {
                 
-                 document.getElementById("head3").style.textDecoration = "underline"; }
+                 head3.style.textDecoration = "underline"; }
                 
                    
                  function mouseOut21() {
                    } 
                    function mouseOut22() {
-                 document.getElementById("searchButton").style.border=" none";
+                 searchButton.style.border=" none";
                   } 
                    function mouseOut23() {
-                 document.getElementById("searchImage").style.border=" none";
+                 searchImage.style.border=" none";
                   } 
             function mouseOut1() {
-                 document.getElementById("foot1").style.textDecoration = "none";
+                 foot1.style.textDecoration = "none";
                }
                 function mouseOut2() {
            
-                  document.getElementById("foot2").style.textDecoration = "none"; }
+                  foot2.style.textDecoration = "none"; }
                   function mouseOut3() {
            
-                 document.getElementById("foot3").style.textDecoration = "none"; }
+                 foot3.style.textDecoration = "none"; }
             function mouseOut4() {
            
-                  document.getElementById("foot4").style.textDecoration = "none"; }
+                 foot4.style.textDecoration = "none"; }
             function mouseOut5() {
            
-                 document.getElementById("foot5").style.textDecoration = "none"; }
+                 foot5.style.textDecoration = "none"; }
             function mouseOut6() {
            
-                  document.getElementById("foot6").style.textDecoration = "none"; }
+                  foot6.style.textDecoration = "none"; }
             function mouseOut7() {
            
-                 document.getElementById("foot7").style.textDecoration = "none"; }
+                 foot7.style.textDecoration = "none"; }
             function mouseOut11() {
            
-                  document.getElementById("head1").style.textDecoration = "none"; }
+                  head1.style.textDecoration = "none"; }
             function mouseOut12() {
            
-                 document.getElementById("head2").style.textDecoration = "none"; }
+                 head2.style.textDecoration = "none"; }
             function mouseOut13() {
            
-                  document.getElementById("head3").style.textDecoration = "none"; }
+                  head3.style.textDecoration = "none"; }
                 
                   
          
