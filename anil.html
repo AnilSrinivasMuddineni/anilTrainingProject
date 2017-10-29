@@ -1,272 +1,254 @@
 <html>
+
 <head>
-	
 </head>
+
 <body>
-  <header id="head">
-     <a href="#" onclick="clickedGmail()" id="head1">Gmail</a>
-     <a href="#" onclick="clickedGmail()" id="head2">Messages</a>
-     <a href="#" onclick="clickedGmail()" id="head3">Google+</a>
-        
-  </header>
-
-  <div id="mainDiv">
- <img src="images/search.jpg" alt="done button">
-  <div id="child11">
-  <input type="text" id="searchBar"/>
- 
-<div id="child12">
-<input type="button" value="search" id="searchButton" onclick="mySearch()"/>
-<input type="button" value="Images" id="searchImage" onclick="mySearchImages()"/>
-</div>
-
-</div>
-  </div>
-  <footer id="foot">
-    <nav id="footnav">
-     <a href="#" onclick="clickedGmail()" id="foot1">Privacy</a>
-     <a href="#" onclick="clickedGmail()" id="foot2">Status</a>
-     <a href="#" onclick="clickedGmail()" id="foot3">Settings</a>
-     <a href="#" onclick="clickedGmail()" id="foot4">Groups</a>
-   </nav>
-   <nav id="footnav1">
-    <a href="#" onclick="clickedGmail()" id="foot5">Carriers</a>
-    <a href="#" onclick="clickedGmail()" id="foot6">Details</a>
-    <a href="#" onclick="clickedGmail()" id="foot7">Contact us</a>
-  
-  </nav>
-  </footer>
-  <script type="text/javascript">
-  			function centerMainDiv() {
+    <header id="head">
+        <a href="#" onclick="clickedGmail()" id="head1">Gmail</a>
+        <a href="#" onclick="clickedGmail()" id="head2">Messages</a>
+        <a href="#" onclick="clickedGmail()" id="head3">Google+</a>
+    </header>
+    <div id="mainDiv">
+        <img src="images/search.jpg" alt="done button">
+        <div id="child11">
+            <input type="text" id="searchBar" />
+            <div id="child12">
+                <input type="button" value="search" id="searchButton" onclick="mySearch()" />
+                <input type="button" value="Images" id="searchImage" onclick="mySearchImages()" />
+            </div>
+        </div>
+    </div>
+    <footer id="foot">
+        <nav id="footnav">
+            <a href="#" onclick="clickedGmail()" id="foot1">Privacy</a>
+            <a href="#" onclick="clickedGmail()" id="foot2">Status</a>
+            <a href="#" onclick="clickedGmail()" id="foot3">Settings</a>
+            <a href="#" onclick="clickedGmail()" id="foot4">Groups</a>
+        </nav>
+        <nav id="footnav1">
+            <a href="#" onclick="clickedGmail()" id="foot5">Carriers</a>
+            <a href="#" onclick="clickedGmail()" id="foot6">Details</a>
+            <a href="#" onclick="clickedGmail()" id="foot7">Contact us</a>
+        </nav>
+    </footer>
+    <script type="text/javascript">
+        function centerMainDiv() {
 
 
-  				var myWidth=window.innerWidth;
-  				var myHeight=window.innerHeight;
-  				var centerDiv=document.getElementById('mainDiv');
-  				document.getElementById("mainDiv").style.position = "absolute";
-  				var mainDivW=(centerDiv.offsetWidth);
-  				var mainDivH=(centerDiv.offsetHeight);
-  				
-  				centerDiv.style.left = (myWidth/2) - (mainDivW/2) + 'px';
-  				centerDiv.style.top = (myHeight/2) - (mainDivH/2) + 'px';
-          var searchBar = document.getElementById('searchBar');
-            setWidthHeight(searchBar,300,40,15,0);
+            var myWidth = window.innerWidth;
+            var myHeight = window.innerHeight;
+            var centerDiv = document.getElementById('mainDiv');
+            document.getElementById("mainDiv").style.position = "absolute";
+            var mainDivW = (centerDiv.offsetWidth);
+            var mainDivH = (centerDiv.offsetHeight);
 
-          searchBar.style.borderRadius = "5px";
-          document.getElementById('child12').style.padding = "5px";
-          var searchButton= document.getElementById('searchButton');
+            centerDiv.style.left = (myWidth / 2) - (mainDivW / 2) + 'px';
+            centerDiv.style.top = (myHeight / 2) - (mainDivH / 2) + 'px';
+            var searchBar = document.getElementById('searchBar');
+            setWidthHeight(searchBar, 300, 40, 15, 0);
 
-           setWidthHeight(searchButton,120,36,15,"#757575");
-             function setWidthHeight(element,width,height,fontSize,color) {
-                  element.style.width=width+"px";
-                  element.style.height=height+"px";
-                  element.style.fontSize=fontSize+"px";
-                  element.style.color=color;
-                  }
+            searchBar.style.borderRadius = "5px";
+            document.getElementById('child12').style.padding = "5px";
+            var searchButton = document.getElementById('searchButton');
 
-            function setButtonImageBorder(element,fontFamily,backgroundColor,margin,border) {
-               element.style.fontFamily=fontFamily;
-              element.style.backgroundColor="#"+ backgroundColor;
-                element.style.margin=margin;
-                element.style.border=border;
-      
+            setWidthHeight(searchButton, 120, 36, 15, "#757575");
+
+            function setWidthHeight(element, width, height, fontSize, color) {
+                element.style.width = width + "px";
+                element.style.height = height + "px";
+                element.style.fontSize = fontSize + "px";
+                element.style.color = color;
             }
 
-            setButtonImageBorder(searchButton,"arial,sans-serif","f2f2f2","11px 10px","1px solid #f2f2f2");
-            var searchImage=document.getElementById('searchImage');
-        
-          setWidthHeight(searchImage,120,36,15,"#757575");
+            function setButtonImageBorder(element, fontFamily, backgroundColor, margin, border) {
+                element.style.fontFamily = fontFamily;
+                element.style.backgroundColor = "#" + backgroundColor;
+                element.style.margin = margin;
+                element.style.border = border;
 
-          setButtonImageBorder(searchImage,"arial,sans-serif","f2f2f2","11px 15px","1px solid #f2f2f2");
-            var head=document.getElementById('head');
-          head.style.textAlign="right";
-          head.style.fontSize="15px";
-          head.style.fontFamily = "arial,sans-serif";
-          var head1=document.getElementById('head1');
-          var head2=document.getElementById('head2');
-           var head3=document.getElementById('head3');
-          head.style.margin="20px";
-          setColorMargin(head1,10,777,"none");
-          setColorMargin(head2,10,777,"none"); 
-          setColorMargin(head3,10,777,"none"); 
-         
-          var foot=document.getElementById('foot');
-          foot.style.bottom="0px";
-          var foot1=document.getElementById('foot1');
-          var foot2=document.getElementById('foot2');
-           var foot3=document.getElementById('foot3');
-           var foot4=document.getElementById('foot4');
-         
-          var footnav=document.getElementById('footnav');
-            foot1.style.paddingLeft="20px";
+            }
 
-          
-         
-         function setFooterStyle(element,fontSize,bottom,right,padding,fontFamily,textAlign,position,margin) {
+            setButtonImageBorder(searchButton, "arial,sans-serif", "f2f2f2", "11px 10px", "1px solid #f2f2f2");
+            var searchImage = document.getElementById('searchImage');
 
-              element.style.fontSize=fontSize+"px";
-              element.style.bottom=bottom+"px";
-              element.style.right=right+"px";
-               element.style.padding=padding+"px";
-              element.style.fontFamily=fontFamily;
-               element.style.textAlign=textAlign;
-              element.style.position=position;
-              element.style.margin=margin+"px";
-             
-             
-         }
+            setWidthHeight(searchImage, 120, 36, 15, "#757575");
 
-          setFooterStyle(footnav,15,0,0,10,"arial,sans-serif","left","absolute",0);
-              footnav.style.border="2px solid #e4e4e4";
-         footnav.style.width="100%";
-          var footnav1=document.getElementById('footnav1');
-          setFooterStyle(footnav1,15,0,0,10,"arial,sans-serif","left","absolute",0);
-            footnav.style.background="#f2f2f2";
-          
-          var foot5=document.getElementById('foot5');
-            var foot6=document.getElementById('foot6');
-           var foot7=document.getElementById('foot7');
-         
-          setColorMargin(foot1,20,777,"none"); 
-          setColorMargin(foot2,20,777,"none"); 
-          setColorMargin(foot3,20,777,"none"); 
-         setColorMargin(foot4,20,777,"none"); 
-         setColorMargin(foot5,20,777,"none"); 
-         setColorMargin(foot6,20,777,"none"); 
-         setColorMargin(foot7,20,777,"none"); 
-         
-           function setColorMargin(element,margin,color,textDecoration) {
-            element.style.margin=margin+"px";
-            element.style.color="#"+color;
-            element.style.textDecoration=textDecoration;
-           }
-          
-          function setMouse(element,mouse,fn) {
-            element.addEventListener(mouse,fn);
-           
-          }
-           setMouse(foot1,"mouseover",mouseOver1);
-           setMouse(foot1,"mouseout",mouseOut1);
-           setMouse(foot2,"mouseover",mouseOver2);
-           setMouse(foot2,"mouseout",mouseOut2);
-           setMouse(foot3,"mouseover",mouseOver3);
-           setMouse(foot3,"mouseout",mouseOut3);
-           setMouse(foot4,"mouseover",mouseOver4);
-           setMouse(foot4,"mouseout",mouseOut4);
-           setMouse(foot5,"mouseover",mouseOver5);
-           setMouse(foot5,"mouseout",mouseOut5);
-           setMouse(foot6,"mouseover",mouseOver6);
-           setMouse(foot6,"mouseout",mouseOut6);
-           setMouse(foot7,"mouseover",mouseOver7);
-           setMouse(foot7,"mouseout",mouseOut7);
-           setMouse(head1,"mouseover",mouseOver11);
-           setMouse(head1,"mouseout",mouseOut11);
-           setMouse(head2,"mouseover",mouseOver12);
-           setMouse(head2,"mouseout",mouseOut12);
-           setMouse(head3,"mouseover",mouseOver13);
-           setMouse(head3,"mouseout",mouseOut13);
-          
-       
-        setMouse(searchBar,"mouseover",mouseOver21);
-        setMouse(searchBar,"mouseout",mouseOut21);
-        setMouse(searchImage,"mouseover",mouseOver23);
-        setMouse(searchImage,"mouseout",mouseOut23);
-        setMouse(searchButton,"mouseover",mouseOver22);
-        setMouse(searchButton,"mouseout",mouseOut22);
+            setButtonImageBorder(searchImage, "arial,sans-serif", "f2f2f2", "11px 15px", "1px solid #f2f2f2");
+            var head = document.getElementById('head');
+            head.style.textAlign = "right";
+            head.style.fontSize = "15px";
+            head.style.fontFamily = "arial,sans-serif";
+            var head1 = document.getElementById('head1');
+            var head2 = document.getElementById('head2');
+            var head3 = document.getElementById('head3');
+            head.style.margin = "20px";
+            setColorMargin(head1, 10, 777, "none");
+            setColorMargin(head2, 10, 777, "none");
+            setColorMargin(head3, 10, 777, "none");
 
-        
-                   function mouseOver21() {
-                 searchBar.style.border=" 1px solid #000000";
-                  } 
-                   function mouseOver22() {
-                 searchButton.style.border=" 1px solid #000000";
-                  } 
-                   function mouseOver23() {
-                 searchImage.style.border=" 1px solid #000000";
-                  } 
-                  function mouseOver1() {
-                 foot1.style.textDecoration = "underline";
-                  } 
-                  function mouseOver2() {
-                   foot2.style.textDecoration = "underline"; }
-                   function mouseOver3() {
-                 foot3.style.textDecoration = "underline"; }
-                   function mouseOver4() {
-                
-                 foot4.style.textDecoration = "underline"; }
-                  function mouseOver5() {
-                
-                 foot5.style.textDecoration = "underline"; }
-                  function mouseOver6() {
-                
-                 foot6.style.textDecoration = "underline"; }
-                  function mouseOver7() {
-                
-                 foot7.style.textDecoration = "underline"; }
-                  function mouseOver11() {
-                
-                 head1.style.textDecoration = "underline"; }
-                  function mouseOver12() {
-                
-                 head2.style.textDecoration = "underline"; }
-                  function mouseOver13() {
-                
-                 head3.style.textDecoration = "underline"; }
-                
-                   
-                 function mouseOut21() {
-                   } 
-                   function mouseOut22() {
-                 searchButton.style.border=" none";
-                  } 
-                   function mouseOut23() {
-                 searchImage.style.border=" none";
-                  } 
-            function mouseOut1() {
-                 foot1.style.textDecoration = "none";
-               }
-                function mouseOut2() {
-           
-                  foot2.style.textDecoration = "none"; }
-                  function mouseOut3() {
-           
-                 foot3.style.textDecoration = "none"; }
-            function mouseOut4() {
-           
-                 foot4.style.textDecoration = "none"; }
-            function mouseOut5() {
-           
-                 foot5.style.textDecoration = "none"; }
-            function mouseOut6() {
-           
-                  foot6.style.textDecoration = "none"; }
-            function mouseOut7() {
-           
-                 foot7.style.textDecoration = "none"; }
-            function mouseOut11() {
-           
-                  head1.style.textDecoration = "none"; }
-            function mouseOut12() {
-           
-                 head2.style.textDecoration = "none"; }
-            function mouseOut13() {
-           
-                  head3.style.textDecoration = "none"; }
-                
-                  
-         
-         
-           
-        
-  				
-  				}
-  				window.onload =function() {
-  					centerMainDiv();
+            var foot = document.getElementById('foot');
+            foot.style.bottom = "0px";
+            var foot1 = document.getElementById('foot1');
+            var foot2 = document.getElementById('foot2');
+            var foot3 = document.getElementById('foot3');
+            var foot4 = document.getElementById('foot4');
 
-  				}
-  				window.onresize =function() {
-  					centerMainDiv();
-  				}
-  </script>
+            var footnav = document.getElementById('footnav');
+            foot1.style.paddingLeft = "20px";
+
+
+
+            function setFooterStyle(element, fontSize, bottom, right, padding, fontFamily, textAlign, position, margin) {
+
+                element.style.fontSize = fontSize + "px";
+                element.style.bottom = bottom + "px";
+                element.style.right = right + "px";
+                element.style.padding = padding + "px";
+                element.style.fontFamily = fontFamily;
+                element.style.textAlign = textAlign;
+                element.style.position = position;
+                element.style.margin = margin + "px";
+
+
+            }
+
+            setFooterStyle(footnav, 15, 0, 0, 10, "arial,sans-serif", "left", "absolute", 0);
+            footnav.style.border = "2px solid #e4e4e4";
+            footnav.style.width = "100%";
+            var footnav1 = document.getElementById('footnav1');
+            setFooterStyle(footnav1, 15, 0, 0, 10, "arial,sans-serif", "left", "absolute", 0);
+            footnav.style.background = "#f2f2f2";
+
+            var foot5 = document.getElementById('foot5');
+            var foot6 = document.getElementById('foot6');
+            var foot7 = document.getElementById('foot7');
+
+            setColorMargin(foot1, 20, 777, "none");
+            setColorMargin(foot2, 20, 777, "none");
+            setColorMargin(foot3, 20, 777, "none");
+            setColorMargin(foot4, 20, 777, "none");
+            setColorMargin(foot5, 20, 777, "none");
+            setColorMargin(foot6, 20, 777, "none");
+            setColorMargin(foot7, 20, 777, "none");
+
+            function setColorMargin(element, margin, color, textDecoration) {
+                element.style.margin = margin + "px";
+                element.style.color = "#" + color;
+                element.style.textDecoration = textDecoration;
+            }
+
+            function setMouse(element, mouse, fn) {
+                element.addEventListener(mouse, fn);
+
+            }
+            setMouse(foot1, "mouseover", function mouseOver1() {
+                foot1.style.textDecoration = "underline";
+            });
+            setMouse(foot1, "mouseout", function mouseOut1() {
+                foot1.style.textDecoration = "none";
+            });
+            setMouse(foot2, "mouseover", function mouseOver2() {
+                foot2.style.textDecoration = "underline";
+            });
+            setMouse(foot2, "mouseout", function mouseOut2() {
+
+                foot2.style.textDecoration = "none";
+            });
+            setMouse(foot3, "mouseover", function mouseOver3() {
+                foot3.style.textDecoration = "underline";
+            });
+            setMouse(foot3, "mouseout", function mouseOut3() {
+
+                foot3.style.textDecoration = "none";
+            });
+            setMouse(foot4, "mouseover", function mouseOver4() {
+
+                foot4.style.textDecoration = "underline";
+            });
+            setMouse(foot4, "mouseout", function mouseOut4() {
+
+                foot4.style.textDecoration = "none";
+            });
+            setMouse(foot5, "mouseover", function mouseOver5() {
+
+                foot5.style.textDecoration = "underline";
+            });
+            setMouse(foot5, "mouseout", function mouseOut5() {
+
+                foot5.style.textDecoration = "none";
+            });
+            setMouse(foot6, "mouseover", function mouseOver6() {
+
+                foot6.style.textDecoration = "underline";
+            });
+            setMouse(foot6, "mouseout", function mouseOut6() {
+
+                foot6.style.textDecoration = "none";
+            });
+            setMouse(foot7, "mouseover", function mouseOver7() {
+
+                foot7.style.textDecoration = "underline";
+            });
+            setMouse(foot7, "mouseout", function mouseOut7() {
+
+                foot7.style.textDecoration = "none";
+            });
+            setMouse(head1, "mouseover", function mouseOver11() {
+
+                head1.style.textDecoration = "underline";
+            });
+            setMouse(head1, "mouseout", function mouseOut11() {
+
+                head1.style.textDecoration = "none";
+            });
+            setMouse(head2, "mouseover", function mouseOver12() {
+
+                head2.style.textDecoration = "underline";
+            });
+            setMouse(head2, "mouseout", function mouseOut12() {
+
+                head2.style.textDecoration = "none";
+            });
+            setMouse(head3, "mouseover", function mouseOver13() {
+
+                head3.style.textDecoration = "underline";
+            });
+            setMouse(head3, "mouseout", function mouseOut13() {
+
+                head3.style.textDecoration = "none";
+            });
+
+
+            setMouse(searchBar, "mouseover", function mouseOver21() {
+                searchBar.style.border = " 1px solid #000000";
+            });
+            setMouse(searchBar, "mouseout", function mouseOut21() {
+                searchButton.style.border = " none";
+            });
+            setMouse(searchImage, "mouseover", function mouseOver23() {
+                searchImage.style.border = " 1px solid #000000";
+            });
+            setMouse(searchImage, "mouseout", function mouseOut23() {
+                searchImage.style.border = " none";
+            });
+            setMouse(searchButton, "mouseover", function mouseOver22() {
+                searchButton.style.border = " 1px solid #000000";
+            });
+            setMouse(searchButton, "mouseout", function mouseOut22() {
+                searchButton.style.border = " none";
+            });
+
+
+        }
+        window.onload = function() {
+            centerMainDiv();
+
+        }
+        window.onresize = function() {
+            centerMainDiv();
+        }
+    </script>
 </body>
+
 </html>
