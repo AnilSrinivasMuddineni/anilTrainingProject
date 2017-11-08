@@ -116,85 +116,48 @@
             }
             function setMouse(element, mouse, fn) {
                 element.addEventListener(mouse, fn);
+
             }
-            setMouse(foot1, "mouseover", function() {
-                foot1.style.textDecoration = "underline";
-            });
-            setMouse(foot1, "mouseout", function() {
-                foot1.style.textDecoration = "none";
-            });
-            setMouse(foot2, "mouseover", function() {
-                foot2.style.textDecoration = "underline";
-            });
-            setMouse(foot2, "mouseout", function() {
-                foot2.style.textDecoration = "none";
-            });
-            setMouse(foot3, "mouseover", function() {
-                foot3.style.textDecoration = "underline";
-            });
-            setMouse(foot3, "mouseout", function() {
-                foot3.style.textDecoration = "none";
-            });
-            setMouse(foot4, "mouseover", function() {
-                foot4.style.textDecoration = "underline";
-            });
-            setMouse(foot4, "mouseout", function() {
-                foot4.style.textDecoration = "none";
-            });
-            setMouse(foot5, "mouseover", function() {
-                foot5.style.textDecoration = "underline";
-            });
-            setMouse(foot5, "mouseout", function() {
-                foot5.style.textDecoration = "none";
-            });
-            setMouse(foot6, "mouseover", function() {
-                foot6.style.textDecoration = "underline";
-            });
-            setMouse(foot6, "mouseout", function() {
-                foot6.style.textDecoration = "none";
-            });
-            setMouse(foot7, "mouseover", function() {
-                foot7.style.textDecoration = "underline";
-            });
-            setMouse(foot7, "mouseout", function() {
-                foot7.style.textDecoration = "none";
-            });
-            setMouse(head1, "mouseover", function() {
-                head1.style.textDecoration = "underline";
-            });
-            setMouse(head1, "mouseout", function() {
-                head1.style.textDecoration = "none";
-            });
-            setMouse(head2, "mouseover", function() {
-                head2.style.textDecoration = "underline";
-            });
-            setMouse(head2, "mouseout", function() {
-                head2.style.textDecoration = "none";
-            });
-            setMouse(head3, "mouseover", function() {
-                head3.style.textDecoration = "underline";
-            });
-            setMouse(head3, "mouseout", function() {
-                head3.style.textDecoration = "none";
-            });
-            setMouse(searchBar, "mouseover", function() {
-                searchBar.style.border = " 1px solid #000000";
-            });
-            setMouse(searchBar, "mouseout", function() {
-                searchButton.style.border = " none";
-            });
-            setMouse(searchImage, "mouseover", function() {
-                searchImage.style.border = " 1px solid #000000";
-            });
-            setMouse(searchImage, "mouseout", function() {
-                searchImage.style.border = " none";
-            });
-            setMouse(searchButton, "mouseover", function() {
-                searchButton.style.border = " 1px solid #000000";
-            });
-            setMouse(searchButton, "mouseout", function() {
-                searchButton.style.border = " none";
-            });
+              function eventHandler(event) {
+                event.target.style.textDecoration = "underline";
+            }
+            
+            function eventHandler1(event) {
+                event.target.style.textDecoration = "none";
+            }
+            setMouse(foot1, "mouseover",eventHandler);
+            setMouse(foot1, "mouseout", eventHandler1);
+            setMouse(foot2, "mouseover", eventHandler);
+            setMouse(foot2, "mouseout", eventHandler1);
+            setMouse(foot3, "mouseover", eventHandler);
+            setMouse(foot3, "mouseout",eventHandler1);
+            setMouse(foot4, "mouseover", eventHandler);
+            setMouse(foot4, "mouseout",eventHandler1);
+            setMouse(foot5, "mouseover", eventHandler);
+            setMouse(foot5, "mouseout",eventHandler1);
+            setMouse(foot6, "mouseover", eventHandler);
+            setMouse(foot6, "mouseout", eventHandler1);
+            setMouse(foot7, "mouseover",eventHandler);
+            setMouse(foot7, "mouseout",eventHandler1);
+            setMouse(head1, "mouseover",eventHandler);
+            setMouse(head1, "mouseout",eventHandler1);
+            setMouse(head2, "mouseover", eventHandler);
+            setMouse(head2, "mouseout",eventHandler1);
+            setMouse(head3, "mouseover", eventHandler);
+            setMouse(head3, "mouseout",eventHandler1);
+            setMouse(searchBar, "mouseover", eventHandler2);
+            setMouse(searchImage, "mouseover",eventHandler2);
+            setMouse(searchImage, "mouseout", eventHandler3);
+            setMouse(searchButton, "mouseover", eventHandler2);
+            setMouse(searchButton, "mouseout",eventHandler3);
+
+             function eventHandler2(event) {
+                event.target.style.border = "1px solid #000000";
+            }
+             function eventHandler3(event) {
+                  event.target.style.border = "none";
+        
+            }
         }
         window.onload = function() {
             centerMainDiv();
