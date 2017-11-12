@@ -125,9 +125,9 @@
             function eventHandler1(event) {
                 event.target.style.textDecoration = "none";
             }
-            setMouse(foot1, "mouseover",eventHandler);
+            //setMouse(foot1, "mouseover",eventHandler);
             setMouse(foot1, "mouseout", eventHandler1);
-            setMouse(foot2, "mouseover", eventHandler);
+            //setMouse(foot2, "mouseover", eventHandler);
             setMouse(foot2, "mouseout", eventHandler1);
             setMouse(foot3, "mouseover", eventHandler);
             setMouse(foot3, "mouseout",eventHandler1);
@@ -158,6 +158,12 @@
                   event.target.style.border = "none";
         
             }
+            var farr=['foot1','foot2'];
+			farr.forEach(mover);
+			function mover(element) {
+			      setMouse(element,"mouseover",eventHandler);
+			}
+        
         }
         window.onload = function() {
             centerMainDiv();
