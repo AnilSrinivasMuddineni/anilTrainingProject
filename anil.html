@@ -126,25 +126,25 @@
                 event.target.style.textDecoration = "none";
             }
             //setMouse(foot1, "mouseover",eventHandler);
-            setMouse(foot1, "mouseout", eventHandler1);
+            //setMouse(foot1, "mouseout", eventHandler1);
             //setMouse(foot2, "mouseover", eventHandler);
-            setMouse(foot2, "mouseout", eventHandler1);
-            setMouse(foot3, "mouseover", eventHandler);
-            setMouse(foot3, "mouseout",eventHandler1);
-            setMouse(foot4, "mouseover", eventHandler);
-            setMouse(foot4, "mouseout",eventHandler1);
-            setMouse(foot5, "mouseover", eventHandler);
-            setMouse(foot5, "mouseout",eventHandler1);
-            setMouse(foot6, "mouseover", eventHandler);
-            setMouse(foot6, "mouseout", eventHandler1);
-            setMouse(foot7, "mouseover",eventHandler);
-            setMouse(foot7, "mouseout",eventHandler1);
-            setMouse(head1, "mouseover",eventHandler);
-            setMouse(head1, "mouseout",eventHandler1);
-            setMouse(head2, "mouseover", eventHandler);
-            setMouse(head2, "mouseout",eventHandler1);
-            setMouse(head3, "mouseover", eventHandler);
-            setMouse(head3, "mouseout",eventHandler1);
+            //setMouse(foot2, "mouseout", eventHandler1);
+            //setMouse(foot3, "mouseover", eventHandler);
+            //setMouse(foot3, "mouseout",eventHandler1);
+            //setMouse(foot4, "mouseover", eventHandler);
+            //setMouse(foot4, "mouseout",eventHandler1);
+            //setMouse(foot5, "mouseover", eventHandler);
+            //setMouse(foot5, "mouseout",eventHandler1);
+            //setMouse(foot6, "mouseover", eventHandler);
+            //setMouse(foot6, "mouseout", eventHandler1);
+            //setMouse(foot7, "mouseover",eventHandler);
+            //setMouse(foot7, "mouseout",eventHandler1);
+            //setMouse(head1, "mouseover",eventHandler);
+            //setMouse(head1, "mouseout",eventHandler1);
+            //setMouse(head2, "mouseover", eventHandler);
+            //setMouse(head2, "mouseout",eventHandler1);
+            //setMouse(head3, "mouseover", eventHandler);
+            //setMouse(head3, "mouseout",eventHandler1);
             setMouse(searchBar, "mouseover", eventHandler2);
             setMouse(searchImage, "mouseover",eventHandler2);
             setMouse(searchImage, "mouseout", eventHandler3);
@@ -158,10 +158,14 @@
                   event.target.style.border = "none";
         
             }
-            var farr=['foot1','foot2'];
+            var farr=['foot1','foot2','foot3','foot4','foot5','foot6','foot7','head1','head2','head3'];
 			farr.forEach(mover);
 			function mover(element) {
 			      setMouse(element,"mouseover",eventHandler);
+			}
+			farr.forEach(mout);
+			function mout(element) {
+				setMouse(element,"mouseout",eventHandler1);
 			}
         
         }
