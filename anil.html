@@ -72,9 +72,9 @@
             var head2 = document.getElementById('head2');
             var head3 = document.getElementById('head3');
             head.style.margin = "20px";
-            setColorMargin(head1, 10, 777, "none");
-            setColorMargin(head2, 10, 777, "none");
-            setColorMargin(head3, 10, 777, "none");
+            //setColorMargin(head1, 10, 777, "none");
+            //setColorMargin(head2, 10, 777, "none");
+            //setColorMargin(head3, 10, 777, "none");
             var foot = document.getElementById('foot');
             foot.style.bottom = "0px";
             var foot1 = document.getElementById('foot1');
@@ -102,13 +102,15 @@
             var foot5 = document.getElementById('foot5');
             var foot6 = document.getElementById('foot6');
             var foot7 = document.getElementById('foot7');
-            setColorMargin(foot1, 20, 777, "none");
-            setColorMargin(foot2, 20, 777, "none");
-            setColorMargin(foot3, 20, 777, "none");
-            setColorMargin(foot4, 20, 777, "none");
-            setColorMargin(foot5, 20, 777, "none");
-            setColorMargin(foot6, 20, 777, "none");
-            setColorMargin(foot7, 20, 777, "none");
+		
+		
+            //setColorMargin(foot1, 20, 777, "none");
+            //setColorMargin(foot2, 20, 777, "none");
+            //setColorMargin(foot3, 20, 777, "none");
+            //setColorMargin(foot4, 20, 777, "none");
+            //setColorMargin(foot5, 20, 777, "none");
+            //setColorMargin(foot6, 20, 777, "none");
+            //setColorMargin(foot7, 20, 777, "none");
             function setColorMargin(element, margin, color, textDecoration) {
                 element.style.margin = margin + "px";
                 element.style.color = "#" + color;
@@ -145,11 +147,16 @@
             //setMouse(head2, "mouseout",eventHandler1);
             //setMouse(head3, "mouseover", eventHandler);
             //setMouse(head3, "mouseout",eventHandler1);
-            setMouse(searchBar, "mouseover", eventHandler2);
-            setMouse(searchImage, "mouseover",eventHandler2);
+            //setMouse(searchBar, "mouseover", eventHandler2);
+            //setMouse(searchImage, "mouseover",eventHandler2);
             setMouse(searchImage, "mouseout", eventHandler3);
-            setMouse(searchButton, "mouseover", eventHandler2);
+            //setMouse(searchButton, "mouseover", eventHandler2);
             setMouse(searchButton, "mouseout",eventHandler3);
+		var search= [searchBar,searchImage,searchButton];
+		   search.forEach(sch);
+		function sch(element) {
+		   setMoouse(element,"mouseover",eventHandler2);
+		}
 
              function eventHandler2(event) {
                 event.target.style.border = "1px solid #000000";
@@ -167,6 +174,11 @@
 			function mout(element) {
 				setMouse(element,"mouseout",eventHandler1);
 			}
+		 farr.forEach(stl);
+		function stl(element) {
+		     setColorMargin(element, 20, 777, "none");
+           
+		}
         
         }
         window.onload = function() {
