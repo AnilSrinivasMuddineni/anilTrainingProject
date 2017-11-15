@@ -72,9 +72,9 @@
             var head2 = document.getElementById('head2');
             var head3 = document.getElementById('head3');
             head.style.margin = "20px";
-            //setColorMargin(head1, 10, 777, "none");
-            //setColorMargin(head2, 10, 777, "none");
-            //setColorMargin(head3, 10, 777, "none");
+            setColorMargin(head1, 10, 777, "none");
+            setColorMargin(head2, 10, 777, "none");
+            setColorMargin(head3, 10, 777, "none");
             var foot = document.getElementById('foot');
             foot.style.bottom = "0px";
             var foot1 = document.getElementById('foot1');
@@ -104,13 +104,13 @@
             var foot7 = document.getElementById('foot7');
 		
 		
-            //setColorMargin(foot1, 20, 777, "none");
-            //setColorMargin(foot2, 20, 777, "none");
-            //setColorMargin(foot3, 20, 777, "none");
-            //setColorMargin(foot4, 20, 777, "none");
-            //setColorMargin(foot5, 20, 777, "none");
-            //setColorMargin(foot6, 20, 777, "none");
-            //setColorMargin(foot7, 20, 777, "none");
+            setColorMargin(foot1, 20, 777, "none");
+            setColorMargin(foot2, 20, 777, "none");
+            setColorMargin(foot3, 20, 777, "none");
+            setColorMargin(foot4, 20, 777, "none");
+            setColorMargin(foot5, 20, 777, "none");
+            setColorMargin(foot6, 20, 777, "none");
+            setColorMargin(foot7, 20, 777, "none");
             function setColorMargin(element, margin, color, textDecoration) {
                 element.style.margin = margin + "px";
                 element.style.color = "#" + color;
@@ -174,11 +174,11 @@
 			function mout(element) {
 				setMouse(element,"mouseout",eventHandler1);
 			}
-		 farr.forEach(stl);
+		/* farr.forEach(stl);
 		function stl(element) {
 		     setColorMargin(element, 20, 777, "none");
            
-		}
+		} */
         
         }
         window.onload = function() {
